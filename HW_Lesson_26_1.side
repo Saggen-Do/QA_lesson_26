@@ -1,0 +1,80 @@
+{
+  "id": "bc51a8b3-63ba-41c4-8128-14fab5a3d181",
+  "version": "2.0",
+  "name": "Lesson_26",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "b36c54a7-915e-4cc2-93bd-1c99c1a8f802",
+    "name": "login",
+    "commands": [{
+      "id": "7afb87fe-753a-4340-8490-2ee42b94afe2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebaab06c-31af-4bb8-be1d-0821977e1a6d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35f1d0ff-d1ff-4ab3-8db6-c663757a674a",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "9ad9f1b0-23f1-45e8-9f63-600174c69d0c",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "7e3ab04c-aa16-4e17-95dc-c00a943c8003",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ad1151d7-d444-4fad-809c-fbf7eca295c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b36c54a7-915e-4cc2-93bd-1c99c1a8f802"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
